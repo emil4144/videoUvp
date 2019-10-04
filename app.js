@@ -127,7 +127,7 @@ const msConfig = {
     let str=StreamPath.split("/")
     let pt=str[str.length-1]  ;
     mkdirp(`./public/live/${pt}`, function(err) {
-        request(`http://128.199.247.46:8000/live/${pt}.flv`).pipe(fs.createWriteStream(`public/live/${pt}/${session.startTimestamp}.flv`));    
+        request(`http://157.245.54.17:8000/live/${pt}.flv`).pipe(fs.createWriteStream(`public/live/${pt}/${session.startTimestamp}.flv`));    
     });
     
   
